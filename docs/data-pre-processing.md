@@ -5,20 +5,23 @@ background-color:rgb(34, 32, 32);
 </style>
 
 #<span style="color:rgb(212, 209, 253);">What is DATA PRE- PROCESSING ?</span>
-<p style="color:rgb(150,150,150); font-weight:100;">The data that we receive might not always be in the best form to feed in to the model. Hence to just manipulate the data to the form we can use effectively, we perform data preprocessing.</p>
+<p style="color:rgb(150,150,150); font-weight:100;"><i><b>Data Pre-Processing </b></i>are techniques that involves transforming raw data into an understandable format. Real-world data is often incomplete, inconsistent, noisy and lacks certain behaviors or attributes, and is likely to contain many errors and imperfections. So data preprocessing is a proven method of resolving such issues.
+<br>The Data we are having in this project is in the form of images. So we will be dealing with image pre-processng techniques, which are sub-sets of data preprocessing.
+<br><i><b>Image preprocessing</b></i> are the steps taken to format the images before they are loaded into training models which includes, image resizing, scaling, color corrections and many more.</p>
 <br>
+
 #<span style="color:rgb(212, 209, 253);">Why do we need it ?</span>
-<p style="color:rgb(150,150,150); font-weight:100;">Two things play a very important role in the face recognition pipeline. The first being the pose and second is the lighting conditions (illumination).
+<p style="color:rgb(150,150,150); font-weight:100;">The data that we receive might not always be in the best form to feed in to the model. Hence to just manipulate the data to the form we can use effectively, we perform data preprocessing.Two things play a very important role in the face recognition pipeline. The first being the pose and second is the lighting conditions (illumination).
 
 Problem identified in the dataset given to us: The images had different lighting conditions. When the pipeline would be deployed, we still have no control over the illumination. Hence we need to pre process our data so that all of the images would come to a common lighting condition.
-The techniques we tried for achieving the same are:
-Histogram equalizer
-Adaptive Histogram equalizer (CLAHE) for grayscale images
-CLAHE - by extracting each of the channels and equalising each channel
-CLAHE - by equalising the ‘V’ channel of the HSV form of the image.
-Logarithmic transform
-Gamma Correction 
-Image specific Gamma Correction
+The techniques we tried for achieving the same are:<br>
+* Histogram equalizer<br>
+* Adaptive Histogram equalizer (CLAHE) for grayscale images<br>
+* CLAHE - by extracting each of the channels and equalising each channel<br>
+* CLAHE - by equalising the ‘V’ channel of the HSV form of the image.<br>
+* Logarithmic transform<br>
+* Gamma Correction <br>
+* Image specific Gamma Correction<br>
 </p>
 <br>
 #<span style="color:rgb(212, 209, 253);">Concepts Explored</span>
