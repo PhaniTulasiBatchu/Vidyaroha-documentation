@@ -3,7 +3,8 @@ body{
 background-color:rgb(34, 32, 32);
 }
 </style>
-
+#<span style="color:rgb(212, 209, 253);">Purpose</span>-- y r we doing it
+#<span style="color:rgb(212, 209, 253);">Vision</span> --how will we do it
 ##<span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span>
 <span style="color:#808080;">1.</span> [Home](index.md)<br>
 <span style="color:#808080;">2.</span> [Overview](overview.md)     
