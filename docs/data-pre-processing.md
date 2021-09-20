@@ -64,14 +64,13 @@ We classified the images based on the bright and dark thresholds and applied the
 <br>
 <br>
 ##<span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span>
-<span style="color:#808080;">1.</span> [Home](index.md)<br>
-<span style="color:#808080;">2.</span> [Overview](overview.md)     
-<span style="color:#808080;">3.</span> [Introduction](introduction.md)    
-<span style="color:#808080;">4.</span> [Data-pre-processing](data-pre-processing.md)   
-<span style="color:#808080;">5.</span> [Face-Detection](face-detection.md)   
-<span style="color:#808080;">6.</span> [Face-Alignment](face-alignment.md)    
-<span style="color:#808080;">7.</span> [Face-Recognition](face-recognition.md)   
-<span style="color:#808080;">8.</span> [Face-Verification](face-verification.md) 
+<span style="color:rgb(212, 209, 253);">1.</span> [Overview](overview.md)         
+<span style="color:rgb(212, 209, 253);">3.</span> [Data-pre-processing](data-pre-processing.md)   
+<span style="color:rgb(212, 209, 253);">4.</span> [Face-Detection](face-detection.md)   
+<span style="color:rgb(212, 209, 253);">5.</span> [Face-Alignment](face-alignment.md)    
+<span style="color:rgb(212, 209, 253);">6.</span> [Face-Recognition](face-recognition.md)   
+<span style="color:rgb(212, 209, 253);">7.</span> [Face-Verification](face-verification.md)   
+<span style="color:rgb(212, 209, 253);">2.</span> [Conclusion](introduction.md)
 
 
 

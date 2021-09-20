@@ -17,14 +17,14 @@ background-color:rgb(34, 32, 32);
 <p style="color:rgb(150,150,150); font-weight:100;">“Frontalization” is the process of synthesizing frontal facing views of faces appearing in single unconstrained photos. Recent reports have suggested that this process may substantially boost the performance of face recognition systems. This, by transforming the challenging problem of recognizing faces viewed from unconstrained viewpoints to the easier problem of recognizing faces in constrained, forward facing poses. Previous frontalization methods did this by attempting to approximate 3D facial shapes for each query image. But here its observed that 3D face shape estimation from unconstrained photos may be a harder problem than frontalization and can potentially introduce facial misalignments. Instead, the simpler approach of using a single, unmodified, 3D surface as an approximation to the shape of all input faces is preferred. This leads to a straightforward, efficient and easy to implement method for frontalization. More importantly, it produces aesthetic new frontal views and is surprisingly effective when used for face recognition and gender estimation.</p>
 ![scene](img9.PNG)
 ##<span style="color:rgb(150,150,150); font-weight:bold;">Difference between the two</span>
-#<span style="color:rgb(212, 209, 253);">Concluding Remarks</span>
+<p style="color:rgb(150,150,150); font-weight:100;">The major difference is that in face alignment, we try to align a specific feature of the face , say eyeseither horizontally or vertically as per the users choice.No modifications are done to the structure of the face only the orientation is modified. Whereas in case of frontalization, the orientation is ignored and the modifications are made to the angle of tilt in the face so that any face tilted towards the right or left by any degree is turned back straight in such a way that all the facil features are visibile in one frame.</p>
+
 #<span style="color:rgb(212, 209, 253);">References</span>
 ##<span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span>
-<span style="color:#808080;">1.</span> [Home](index.md)<br>
-<span style="color:#808080;">2.</span> [Overview](overview.md)     
-<span style="color:#808080;">3.</span> [Introduction](introduction.md)    
-<span style="color:#808080;">4.</span> [Data-pre-processing](data-pre-processing.md)   
-<span style="color:#808080;">5.</span> [Face-Detection](face-detection.md)   
-<span style="color:#808080;">6.</span> [Face-Alignment](face-alignment.md)    
-<span style="color:#808080;">7.</span> [Face-Recognition](face-recognition.md)   
-<span style="color:#808080;">8.</span> [Face-Verification](face-verification.md) 
+<span style="color:rgb(212, 209, 253);">1.</span> [Overview](overview.md)         
+<span style="color:rgb(212, 209, 253);">3.</span> [Data-pre-processing](data-pre-processing.md)   
+<span style="color:rgb(212, 209, 253);">4.</span> [Face-Detection](face-detection.md)   
+<span style="color:rgb(212, 209, 253);">5.</span> [Face-Alignment](face-alignment.md)    
+<span style="color:rgb(212, 209, 253);">6.</span> [Face-Recognition](face-recognition.md)   
+<span style="color:rgb(212, 209, 253);">7.</span> [Face-Verification](face-verification.md)   
+<span style="color:rgb(212, 209, 253);">2.</span> [Conclusion](introduction.md) 
