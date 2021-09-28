@@ -29,6 +29,7 @@ background-color:rgb(34, 32, 32);
 1. Meda Sai Balaji Bhargav<br>
 2. Kodumuru Saketh<br>
 3. Phani Tulasi Batchu<br>
+4. Pendyala Sri Harshita<br>
 </p>
 ##<span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span>
 <span style="color:rgb(212, 209, 253);">1.</span> [Overview](overview.md)         

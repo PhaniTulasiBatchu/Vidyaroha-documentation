@@ -27,6 +27,8 @@ Let us assume that (x1,y1) and (x2,y2) are two points in a two-dimensional plane
 <p style="color:rgb(150,150,150); font-weight:100;">
 1. Meda Sai Balaji Bhargav<br>
 2. Kodumuru Saketh<br>
+3. Pendyala Sri Harshita <br>
+4. Solipuram Akshith Reddy<br> 
 </p>
 
 ##<span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span>
