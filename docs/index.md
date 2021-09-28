@@ -8,7 +8,7 @@ background-color:rgb(34, 32, 32);
 
 ##<span style="color:rgb(212, 209, 253);">AIM</span>
 <p style="color:rgb(150,150,150); font-weight:100;">Marking of attendance for students captured under a group image. 
-The group images are processed for image correction and amplification of facial features, after which they are matched with the existing database and attendance are marked accordingly.</p>
+The group images are processed for image correction and amplification of facial features, after which they are matched with the existing database and attendance are marked accordingly. </p>
 
 #<span style="color:rgb(212, 209, 253);">----TABLE OF CONTENTS----</span>
 
