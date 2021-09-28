@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Data pre processing - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#what-is-data-pre-processing" class="nav-link">What is DATA PRE- PROCESSING ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#why-do-we-need-it" class="nav-link">Why do we need it ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#concepts-explored" class="nav-link">Concepts Explored</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#1-histogram-equalizer" class="nav-link">1. Histogram Equalizer </a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2-gamma-correction" class="nav-link">2. Gamma Correction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3-weiner-filter" class="nav-link">3. Weiner Filter</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#concluding-remarks" class="nav-link">Concluding Remarks</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#references" class="nav-link">References</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#contributors" class="nav-link">Contributors</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-table-of-content-" class="nav-link">----TABLE OF CONTENT----</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<style>
+body{
+background-color:rgb(34, 32, 32);
+}
+</style>
+
+<h1 id="what-is-data-pre-processing"><span style="color:rgb(212, 209, 253);">What is DATA PRE- PROCESSING ?</span></h1>
+<p style="color:rgb(150,150,150); font-weight:100;"><i><b>Data Pre-Processing </b></i>includes techniques that involves transforming raw data into an understandable format. Real-world data is often incomplete, inconsistent, noisy and lacks certain behaviours or attributes, and is likely to contain many errors and imperfections. So, data pre-processing is a proven method of resolving such issues.
+<br>The Data we are having in this project is in the form of images. So, we will be dealing with image pre-processing techniques, which are sub-sets of data pre-processing.
+<br><i><b>Image pre-processing</b></i> includes the steps taken to format the images before they are loaded into training models which includes, image resizing, scaling, colour corrections and many more.</p>
+<p><br></p>
+<h1 id="why-do-we-need-it"><span style="color:rgb(212, 209, 253);">Why do we need it ?</span></h1>
+<p style="color:rgb(150,150,150); font-weight:100;">The data that we receive might not always be in the best form to feed in to the model. Hence to just manipulate the data to the form we can use effectively, we perform data pre-processing. Two things play a very important role in the face recognition pipeline. The first being the pose and second is the lighting conditions (illumination).
+
+Problem identified in the dataset given to us: The images had different lighting conditions. When the pipeline would be deployed, we still have no control over the illumination. Hence we need to pre process our data so that all of the images would come to a common lighting condition.
+The techniques we tried for achieving the same are:<br>
+* Histogram equalizer<br>
+* Adaptive Histogram equalizer (CLAHE) for grayscale images<br>
+* CLAHE - by extracting each of the channels and equalising each channel<br>
+* CLAHE - by equalising the ‘V’ channel of the HSV form of the image.  <br>
+* Logarithmic transform<br>
+* Gamma Correction <br>
+* Image specific Gamma Correction<br>
+</p>
+
+<p><br></p>
+<h1 id="concepts-explored"><span style="color:rgb(212, 209, 253);">Concepts Explored</span></h1>
+<p><br></p>
+<h2 id="1-histogram-equalizer"><span style="color:rgb(150,150,150); font-weight:bold;">1. Histogram Equalizer </span></h2>
+<p style="color:rgb(150,150,150); font-weight:100;">Histogram Equalization is a technique used to improve the contrast in images. The regions of lower contrast are improved to a higher contrast. The main objective of Histogram equalizer is to normalise the varying illumination conditions. 
+Histogram Equalization can be applied to the whole image by equalizing the individual channels or by converting the image to another colour space.
+
+Adaptive Histogram Equalizer or CLAHE is used to equalize the image at every section. We can set a particular clip limit value according to which the image will be normalized.
+
+For this dataset we have used CLAHE by equalizing the ‘V’ channel of the HSV form of the image. Converting to HSV and then equalising gave the best results as compared to grayscale or RGB.</p>
+
+<p><img alt="scene" src="../img2.PNG" /></p>
+<h2 id="2-gamma-correction"><span style="color:rgb(150,150,150); font-weight:bold;">2. Gamma Correction</span></h2>
+<p style="color:rgb(150,150,150); font-weight:100;">Gamma correction is used to improve the contrast of an image based on its current lighting conditions, which implies that for each image we can apply a different value of gamma and normalize it. 
+
+We classified the images into three categories based on the illumination
+Overexposed : Images with very bright lighting condition
+Underexposed : Images with dark lighting condition
+Neutral : Images with a good lighting
+
+Based on this classification we used different values of gamma to correct the images.
+We classified the images based on the bright and dark thresholds and applied the gamma values as 2 for underexposed images and 0.3 for overexposed images. No gamma correction was done for neutral images. </p>
+<p><img alt="scene" src="../img3.PNG" /></p>
+<h2 id="3-weiner-filter"><span style="color:rgb(150,150,150); font-weight:bold;">3. Weiner Filter</span></h2>
+<p style="color:rgb(150,150,150); font-weight:100;">Another major problem that we tend to face while using a  dataset that includes images captured manually is <i>Motion Blur</i><br>The most important technique for removal of blur in images due to linear motion or unfocussed optics is the Wiener filter. <b>The Wiener filtering</b> is a restoration technique for deconvolution that can be used effectively when the frequency characteristics of the image and additive noise are known, to at least some degree, it is possible to recover the image by generalized inverse filtering. The Wiener filtering is optimal in terms of the mean square error. In other words, it minimizes the overall mean square error in the process of inverse filtering and noise smoothing. The Wiener filtering is a linear estimation of the original image. It should be noted that Weiner filters are far and away the most common deblurring technique used because it mathematically returns the best results. It should also be re-emphasized that Wiener filtering is in fact the underlying premise for restoration of other kinds of blur; and being a least-mean-squares technique, it has roots in a spectrum of other engineering applications.<br>OUTPUT:-</p>
+
+<p><img alt="scene" src="../img5.PNG" /></p>
+<h1 id="concluding-remarks"><span style="color:rgb(212, 209, 253);">Concluding Remarks</span></h1>
+<p style="color:rgb(150,150,150); font-weight:100;">As per our requirements we have used Histogram Equalizer in our pipeline.</p>
+<p><br></p>
+<h1 id="references"><span style="color:rgb(212, 209, 253);">References</span></h1>
+<p><a href="https://medium.com/@fanzongshaoxing/detect-face-in-bad-lighting-condition-using-color-histograms-2571df5fc53b">refer</a>
+<br>
+<br>
+<br></p>
+<h1 id="contributors"><span style="color:rgb(212, 209, 253);">Contributors</span></h1>
+<p style="color:rgb(150,150,150); font-weight:100;">
+1. Pendyala Sri Harshita<br>
+2. Solipuram Akshith Reddy<br>
+3. Phani Tulasi Batchu<br>
+</p>
+<h2 id="-table-of-content-"><span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span></h2>
+<p><span style="color:rgb(212, 209, 253);">1.</span> <a href="../overview/">Overview</a>       <br />
+<span style="color:rgb(212, 209, 253);">3.</span> <a href="./">Data-pre-processing</a> <br />
+<span style="color:rgb(212, 209, 253);">4.</span> <a href="../face-detection/">Face-Detection</a> <br />
+<span style="color:rgb(212, 209, 253);">5.</span> <a href="../face-alignment/">Face-Alignment</a>  <br />
+<span style="color:rgb(212, 209, 253);">6.</span> <a href="../face-recognition/">Face-Recognition</a> <br />
+<span style="color:rgb(212, 209, 253);">7.</span> <a href="../face-verification/">Face-Verification</a> <br />
+<span style="color:rgb(212, 209, 253);">2.</span> <a href="../introduction/">Conclusion</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

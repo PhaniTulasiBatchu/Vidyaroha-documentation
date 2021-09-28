@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Face recognition - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#face-recognition" class="nav-link">Face Recognition</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#inception-resnet-v2" class="nav-link">Inception-ResNet-v2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#facenet" class="nav-link">Facenet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#contributors" class="nav-link">Contributors</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-table-of-content-" class="nav-link">----TABLE OF CONTENT----</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<style>
+body{
+background-color:rgb(34, 32, 32);
+}
+</style>
+<h1 id="face-recognition"><span style="color:rgb(212, 209, 253);">Face Recognition</span></h1>
+<h2 id="inception-resnet-v2"><span style="color:rgb(212, 209, 253);">Inception-ResNet-v2</span></h2>
+<p style="color:rgb(150,150,150); font-weight:100;">ResNet and Inception have been central to the largest advances in image recognition performance in recent years, with very good performance at a relatively low computational cost.
+Inception-ResNet combines the Inception architecture, with residual connections.
+Inception Resnet (V1) is a model in facenet-pytorch library which is pretrained on VGGFace2 and CASIA-Webface.</p>
+<h2 id="facenet"><span style="color:rgb(212, 209, 253);">Facenet</span></h2>
+<p style="color:rgb(150,150,150); font-weight:100;">FaceNet is a one-shot face recognition pipeline, it uses a deep convolutional network that directly learns a mapping from face images to a compact Euclidean multidimensional space where distances directly correspond to a measure of face similarity. Once this space has been produced, tasks such as face recognition, verification and clustering can be easily implemented using standard techniques with FaceNet compact 128-D embeddings as feature vectors. To train, they used triplets of roughly aligned matching / non-matching face patches. A triplet is nothing but a collection one anchor image, one matching image to the anchor image and one non-matching image to the anchor image. So the triplet loss minimises the distance between an anchor and a positive, both of which have the same identity, and maximises the distance between the anchor and a negative of a different identity.
+In this step we encode the image into embeddings. Embeddings are high dimensional vectors. For feature extraction we are using a Facenet model. FaceNet is a deep neural network used for extracting features from an image of a person’s face. It was published in 2015 by Google researchers that FaceNet takes an image of the person’s face as input and outputs a vector of 128 numbers which represent the most important features of a face. In machine learning, this vector is called embedding. Basically, FaceNet takes a person’s face and compresses it into a vector of 128 numbers. Ideally, embeddings of similar faces are also similar. With the help of those embeddings, we perform face classification.
+</p>
+<p style="color:rgb(150,150,150); font-weight:100;">In this project we used facenet to get the 128-d embeddings from each of the input images.</p>
+<p><img alt="scene" src="../img14.png" /></p>
+<h1 id="contributors"><span style="color:rgb(212, 209, 253);">Contributors</span></h1>
+<p style="color:rgb(150,150,150); font-weight:100;">
+1. Meda Sai Balaji Bhargav<br>
+2. Kodumuru Saketh<br>
+</p>
+<h2 id="-table-of-content-"><span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span></h2>
+<p><span style="color:rgb(212, 209, 253);">1.</span> <a href="../overview/">Overview</a>       <br />
+<span style="color:rgb(212, 209, 253);">3.</span> <a href="../data-pre-processing/">Data-pre-processing</a> <br />
+<span style="color:rgb(212, 209, 253);">4.</span> <a href="../face-detection/">Face-Detection</a> <br />
+<span style="color:rgb(212, 209, 253);">5.</span> <a href="../face-alignment/">Face-Alignment</a>  <br />
+<span style="color:rgb(212, 209, 253);">6.</span> <a href="./">Face-Recognition</a> <br />
+<span style="color:rgb(212, 209, 253);">7.</span> <a href="../face-verification/">Face-Verification</a> <br />
+<span style="color:rgb(212, 209, 253);">2.</span> <a href="../introduction/">Conclusion</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
