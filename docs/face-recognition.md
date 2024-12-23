@@ -14,11 +14,7 @@ In this step we encode the image into embeddings. Embeddings are high dimensiona
 </p>
 <p style="color:rgb(150,150,150); font-weight:100;">In this project we used facenet to get the 128-d embeddings from each of the input images.</p>
 ![scene](img14.png)
-#<span style="color:rgb(212, 209, 253);">Contributors</span>
-<p style="color:rgb(150,150,150); font-weight:100;">
-1. Meda Sai Balaji Bhargav<br>
-2. Kodumuru Saketh<br>
-</p>
+
 ##<span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span>
 <span style="color:rgb(212, 209, 253);">1.</span> [Overview](overview.md)         
 <span style="color:rgb(212, 209, 253);">3.</span> [Data-pre-processing](data-pre-processing.md)   
