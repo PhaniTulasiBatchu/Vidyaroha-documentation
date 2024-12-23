@@ -63,12 +63,7 @@ We classified the images based on the bright and dark thresholds and applied the
 <br>
 <br>
 <br>
-#<span style="color:rgb(212, 209, 253);">Contributors</span>
-<p style="color:rgb(150,150,150); font-weight:100;">
-1. Pendyala Sri Harshita<br>
-2. Solipuram Akshith Reddy<br>
-3. Phani Tulasi Batchu<br>
-</p>
+
 ##<span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span>
 <span style="color:rgb(212, 209, 253);">1.</span> [Overview](overview.md)         
 <span style="color:rgb(212, 209, 253);">3.</span> [Data-pre-processing](data-pre-processing.md)   
