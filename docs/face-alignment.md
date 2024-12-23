@@ -18,11 +18,7 @@ background-color:rgb(34, 32, 32);
 ![scene](img9.PNG)
 ##<span style="color:rgb(150,150,150); font-weight:bold;">Difference between the two</span>
 <p style="color:rgb(150,150,150); font-weight:100;">The major difference is that in face alignment, we try to align a specific feature of the face , say eyeseither horizontally or vertically as per the users choice.No modifications are done to the structure of the face only the orientation is modified. Whereas in case of frontalization, the orientation is ignored and the modifications are made to the angle of tilt in the face so that any face tilted towards the right or left by any degree is turned back straight in such a way that all the facial features are visible in one frame. </p>
-#<span style="color:rgb(212, 209, 253);">Contributors</span>
-<p style="color:rgb(150,150,150); font-weight:100;">
-1. Kodumuru Saketh<br>
-2. Phani Tulasi Batchu<br>
-</p>
+
 #<span style="color:rgb(212, 209, 253);">References</span>
 ##<span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span>
 <span style="color:rgb(212, 209, 253);">1.</span> [Overview](overview.md)         
