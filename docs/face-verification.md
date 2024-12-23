@@ -23,14 +23,6 @@ Let us assume that (x1,y1) and (x2,y2) are two points in a two-dimensional plane
 <p style="color:rgb(150,150,150); font-weight:100;">Cosine similarity is a metric used to measure how similar the documents are irrespective of their size. Mathematically, it measures the cosine of the angle between two vectors projected in a multi-dimensional space. The cosine similarity is advantageous because even if the two similar documents are far apart by the Euclidean distance (due to the size of the document), chances are they may still be oriented closer together. The smaller the angle, higher the cosine similarity. </p>
 ![scene](img12.PNG)
 
-#<span style="color:rgb(212, 209, 253);">Contributors</span>
-<p style="color:rgb(150,150,150); font-weight:100;">
-1. Meda Sai Balaji Bhargav<br>
-2. Kodumuru Saketh<br>
-3. Pendyala Sri Harshita <br>
-4. Solipuram Akshith Reddy<br> 
-</p>
-
 ##<span style="color:rgb(150,150,150);">----TABLE OF CONTENT----</span>
 <span style="color:rgb(212, 209, 253);">1.</span> [Overview](overview.md)         
 <span style="color:rgb(212, 209, 253);">3.</span> [Data-pre-processing](data-pre-processing.md)   
